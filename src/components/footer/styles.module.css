@@ -1,0 +1,11 @@
+.footer {
+  width: 100%;
+  min-height: 50px;
+}
+
+.footer::before {
+  content: "";
+  display: block;
+  margin: 10px 0;
+  border-bottom: 1px solid var(--main-theme-color);
+}

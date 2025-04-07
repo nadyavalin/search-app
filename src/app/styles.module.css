@@ -1,0 +1,39 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.imageContainer {
+  display: flex;
+  align-items: center;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0),
+    rgb(0, 0, 0) 10%,
+    rgb(0, 0, 0) 90%,
+    rgba(255, 255, 255, 0)
+  );
+  margin-bottom: 0;
+}
+
+.img404 {
+  width: 40%;
+  height: 40%;
+}
+
+.turnMainPageLink {
+  font-size: 20px;
+}
+
+.text404 {
+  color: var(--text-color);
+  font-size: 100px;
+  padding: 0;
+  margin: 0;
+}
+
+.errorMessage {
+  color: var(--accent-color);
+  font-weight: 600;
+}

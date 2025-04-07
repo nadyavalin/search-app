@@ -1,0 +1,9 @@
+.results {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 20px auto;
+  gap: 20px;
+}

@@ -1,0 +1,101 @@
+:root {
+  font-family: Inter, system-ui, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --accent-color: #ff0000;
+  --border-shadow-color: rgba(255, 255, 255, 0.5);
+  --loader-mask: conic-gradient(#0000 10%, #000), linear-gradient(#000 0 0) content-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 100vh;
+  margin: 0;
+  background-image: var(--bg-image);
+  background-attachment: fixed;
+  text-align: center;
+  color: var(--text-color);
+  background-color: var(--transparent-color);
+  background-blend-mode: darken;
+
+  --main-theme-color: #6e75ff;
+  --bg-color: #090033;
+  --bg-image: url("../../public/dark-fon.jpg");
+  --transparent-color: rgb(9, 0, 51, 0.7);
+  --transparent-color-hover: rgba(119, 94, 229, 0.3);
+  --transparent-color-disabled: rgba(119, 94, 229, 0.2);
+  --text-main-color: #4d54da;
+  --text-color: #dedbff;
+  --color-hover: #a0a5ff;
+  --main-color: #7378d8;
+}
+
+body[theme="light"] {
+  --main-theme-color: #2c1a7e;
+  --bg-color: #b4a6f3;
+  --bg-image: url("../../public/light-fon.jpg");
+  --transparent-color: rgba(180, 166, 243, 0.9);
+  --transparent-color-hover: rgba(233, 233, 233, 0.6);
+  --transparent-color-disabled: rgba(180, 166, 243, 0.4);
+  --text-main-color: #00067c;
+  --text-color: #090033;
+  --color-hover: #4d54da;
+  --main-color: #7277ff;
+}
+
+a {
+  font-weight: 500;
+  color: var(--main-color);
+  text-decoration: inherit;
+  transition: color 0.3s ease;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+input {
+  border-radius: 8px;
+  padding: 0px 5px;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 400;
+  font-family: inherit;
+  background-color: var(--main-color);
+  cursor: pointer;
+  transition: background-color 0.25s;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+p {
+  margin: 2px;
+}
+
+@media (hover: hover) {
+  a:hover {
+    color: var(--color-hover);
+  }
+
+  button:hover {
+    background-color: var(--color-hover);
+  }
+}
